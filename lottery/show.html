@@ -1,0 +1,44 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>总名单</title>
+</head>
+
+<body background="http://img.zcool.cn/community/0154435a5d5ff6a80120121fa214a9.jpg@2o.jpg">
+<h1 align="center">中奖名单</h1>
+<br/><br/>
+<table width="50%" border="1" align="center" cellpadding="8" cellspacing="0" >
+    <tr>
+    <td align="center"><strong>一等奖</strong></td>
+    <td align="center"><strong>二等奖</strong></td>
+    <td align="center"><strong>三等奖</strong></td>
+    </tr>
+    <tr>
+        <td align="center">
+            {%for i in winners1%}
+            <p>{{i}}</p>
+            {% end %}
+        </td>
+        <td align="center">
+            {%for i in winners2%}
+            <p>{{i}}</p>
+            {% end %}
+        </td>
+        <td align="center">
+            {%for i in winners3%}
+            <p>{{i}}</p>
+            {% end %}
+        </td>
+    </tr>
+</table>
+
+<br/><br/><br/><br/>
+
+<div align="center">
+    <a href="lottery" onClick="javascript :history.back(-1);">
+        <font style="width:300px;height: 65px;font-size: 35px;font-weight: 280px;">返回继续</font>
+    </a>
+</div>
+</body>
+</html>
