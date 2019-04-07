@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>聊天室</title>
+</head>
+
+<body style="background-color:#eff4fa">
+     <div align="center">
+         <h1>你好 ！{{ username }} <br> 欢迎来到聊天室！</h1>
+         <div id="p1">
+             {%for i in room%}
+                <p><a href="/chat/?n={{i}}&u={{ session }}&username={{username}}"> 聊天室{{i}}</a></p>
+             {% end %}
+         </div>
+         <form method="post">
+             <input type="submit" value="新建聊天室">
+         </form>
+
+    </div>
+</body>
